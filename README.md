@@ -60,16 +60,6 @@ This playbook has been broken up into four individual role groups:
 * Install slack desktop client.
 * Install teamviewer.
 
-## Use
-
-```sh
-git clone https://github.com/neetjn/ansible-plays-elementary.git
-
-cd ansible-plays-elementary
-
-ansible-playbook playbook.yml
-```
-
 ---
 
 Copyright (c) 2019 John Nolette Licensed under the MIT license.
