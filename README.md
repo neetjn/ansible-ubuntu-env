@@ -60,12 +60,6 @@ This playbook has been broken up into four individual role groups:
 * Install slack desktop client.
 * Install teamviewer.
 
-## Variables
-
-Playbook inventory variables can be found in `group_vars/all.yml`.
-
-    git_ssh_key_user: Label of ssh key generated for git.
-
 ## Use
 
 ```sh
