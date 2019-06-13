@@ -12,10 +12,12 @@ This playbook has been broken up into four individual role groups:
 * Install zsh shell.
 * Install bash/zsh completion.
 * Install elinks.
-* Install i3 environment (with i3blocks).
+* Install i3 environment (with i3blocks, i3-gaps).
 * Install tmux.
 * Install nitrogen.
 * Install jq.
+* Install Gnome Tweaks.
+* Install Gimp.
 
 #### Development
 

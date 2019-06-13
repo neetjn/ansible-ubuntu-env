@@ -139,3 +139,8 @@
   apt:
     name: gnome-tweaks
     state: present
+
+- name: Install Gimp
+  apt:
+    name: gimp
+    state: present
