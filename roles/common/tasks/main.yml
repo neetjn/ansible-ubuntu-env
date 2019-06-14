@@ -144,3 +144,19 @@
   apt:
     name: gimp
     state: present
+
+- name: Install kdenlive
+  apt:
+    name: kdenlive
+    state: present
+
+- name: Add obs studio repository
+  apt_repository:
+    validate_certs: no
+    repo: ppa:obsproject/obs-studio
+    state: present
+
+- name: Install obs studio
+  apt:
+    name: obs-studio
+    state: present

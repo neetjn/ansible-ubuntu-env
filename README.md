@@ -18,6 +18,8 @@ This playbook has been broken up into four individual role groups:
 * Install jq.
 * Install Gnome Tweaks.
 * Install Gimp.
+* Install kdenlive (video editting).
+* Install obs (screencasting).
 
 #### Development
 
