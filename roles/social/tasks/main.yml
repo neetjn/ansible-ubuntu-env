@@ -12,3 +12,7 @@
 
 - name: Install Slack
   shell: snap install slack --classic
+
+- name: Install Caprine
+  shell: snap install caprine --classic
+  
