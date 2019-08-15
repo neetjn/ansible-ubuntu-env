@@ -20,6 +20,7 @@ This playbook has been broken up into four individual role groups:
 * Install Gimp.
 * Install kdenlive (video editting).
 * Install obs (screencasting).
+* Install ffsend.
 
 #### Development
 
