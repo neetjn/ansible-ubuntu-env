@@ -246,31 +246,18 @@
     name: vim
     state: present
 
-- name: Install pathogen for vim
-  shell: |
-    mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+- name: Install gvim
+  apt:
+    name: vim-gnome
+    state: present
 
-- name: Install apt-vim
-  shell: |
-    curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
-    chmod +x "{{home_directory}}/apt-vim/apt-vim"
-    cat "{{home_directory}}/.bashrc" | grep apt-vim || echo "alias apt-vim='{{home_directory}}/apt-vim/apt-vim' >> {{home_directory}}/.bashrc"
-    cat "{{home_directory}}/.zshrc" | grep apt-vim || echo "alias apt-vim='{{home_directory}}/apt-vim/apt-vim' >> {{home_directory}}/.zshrc"
-  become: False
+- name: Install vimplug for vim plugins
+  shell: curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# assumes script exists - see common tasks for cloning dotfiles
 - name: Install vim plugins
-  shell: |
-    alias apt-vim="{{home_directory}}/apt-vim/apt-vim" && ".{{home_directory}}"/.tools/install-vim-plugins.sh
-  become: False
+  shell: vim +PlugInstall +qall
 
 - name: Install editorconfig core
   apt:
     name: editorconfig
-    state: present
-
-- name: Install gvim
-  apt:
-    name: vim-gnome
     state: present
