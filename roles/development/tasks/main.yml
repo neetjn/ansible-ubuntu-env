@@ -261,3 +261,14 @@
   apt:
     name: editorconfig
     state: present
+
+- name: Add openjdk ppa for java
+  apt_repository:
+    validate_certs: no
+    repo: ppa:openjdk-r/ppa
+    state: present
+
+- name: Install Java 8 JDK
+  apt:
+    name: openjdk-8-jdk
+    state: present

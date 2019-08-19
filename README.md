@@ -54,6 +54,7 @@ This playbook has been broken up into four individual role groups:
 * Install insomnia rest tool.
 * Install vscode.
 * Install vim and gvim.
+* Install Java 8
 
 #### Aesthetics
 
