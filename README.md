@@ -55,6 +55,7 @@ This playbook has been broken up into four individual role groups:
 * Install vscode.
 * Install vim and gvim.
 * Install Java 8
+* Install Gradle (with groovy)
 
 #### Aesthetics
 
