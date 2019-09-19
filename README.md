@@ -64,8 +64,10 @@ This playbook has been broken up into four individual role groups:
 
 #### Social
 
-* Install slack desktop client.
 * Install teamviewer.
+* Install Caprine (messenger).
+* Install Slack.
+* Install Microsoft Teams.
 
 ---
 
