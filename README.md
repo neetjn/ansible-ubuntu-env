@@ -61,6 +61,7 @@ This playbook has been broken up into four individual role groups:
 
 * Install Oranchelo icon theme.
 * Install numix gtk theme.
+* Install Polybar.
 
 #### Social
 
