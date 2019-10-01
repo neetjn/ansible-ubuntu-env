@@ -47,7 +47,7 @@ This playbook has been broken up into four individual role groups:
 * Install mycli (interactive mysql cli).
 * Install pgcli (interactive postgres cli).
 * Install Go lang (stable).
-* Install Rust lang (stable).
+* Install Rust lang (edge).
 * Install Dart 2.
 * Install php7.
 * Install composer (w/ laravel).
