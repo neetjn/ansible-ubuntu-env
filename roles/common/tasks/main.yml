@@ -168,7 +168,9 @@
   ignore_errors: True
 
 # will install the latest version of ffsend
-- name: Install Code
+- name: Install ffsend
   shell: snap install ffsend
   when: ffsend_check.rc == 1
   
+- name: Install Spotify
+  shell: snap install spotify
