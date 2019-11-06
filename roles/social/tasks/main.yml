@@ -14,7 +14,7 @@
   shell: snap install slack --classic
 
 - name: Install Caprine
-  shell: snap install caprine --classic
+  shell: snap install caprine
   
 - name: Install Teams
   shell: snap install teams-for-linux

@@ -71,7 +71,8 @@
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
     - xutils-dev
-    - libxcb-shape0-dev autoconf
+    - libxcb-shape0-dev
+    - autoconf
 
 - name: Install xcb-utils
   shell: curl -s https://gist.githubusercontent.com/neetjn/1452f0ca91886d935baaa405fb8dd15f/raw/513ccda3740c789edaf80f0c5875e2d4386cc7f9/install-xcb-util.sh | bash
@@ -161,16 +162,8 @@
     name: obs-studio
     state: present
 
-# check if ffsend installed
-- name: Check ffsend Installed
-  shell: which ffsend
-  register: ffsend_check
-  ignore_errors: True
-
-# will install the latest version of ffsend
 - name: Install ffsend
   shell: snap install ffsend
-  when: ffsend_check.rc == 1
   
 - name: Install Spotify
   shell: snap install spotify
