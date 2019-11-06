@@ -90,6 +90,16 @@
     name: tmux
     state: present
 
+- name: Install blueman applet
+  apt:
+    name: blueman
+    state: present
+
+- name: Install volumeicon applet
+  apt:
+    name: volumeicon-alsa
+    state: present
+
 - name: Install zsh
   apt:
     name: zsh
