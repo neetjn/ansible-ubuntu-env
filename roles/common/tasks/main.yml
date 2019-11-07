@@ -8,6 +8,11 @@
     name: software-properties-common
     state: present
 
+- name: Install net tools
+  apt:
+    name: net-tools
+    state: present
+
 - name: Install codec libraries
   apt:
     name: libavcodec-extra
