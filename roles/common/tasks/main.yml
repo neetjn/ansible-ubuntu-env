@@ -182,3 +182,8 @@
   
 - name: Install Spotify
   shell: snap install spotify
+  
+- name: Install Redshift
+  apt:
+    name: redshift
+    state: present
