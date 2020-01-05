@@ -32,3 +32,7 @@
     cp target/release/i3status-rs ~/.bin/i3status-rs
   become: False
 
+- name: Install gruvbox shell theme
+  shell: bash -c "$(wget -qO- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/gruvbox-dark.sh)"
+  become: False
+
