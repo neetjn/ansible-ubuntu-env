@@ -72,6 +72,7 @@ This playbook has been broken up into four individual role groups:
 * Install Caprine (messenger).
 * Install Slack.
 * Install Microsoft Teams.
+* Install Discord.
 
 ---
 
