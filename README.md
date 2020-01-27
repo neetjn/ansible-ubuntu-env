@@ -73,7 +73,3 @@ This playbook has been broken up into four individual role groups:
 * Install Slack.
 * Install Microsoft Teams.
 * Install Discord.
-
----
-
-Copyright (c) 2020 John Nolette Licensed under the MIT license.
