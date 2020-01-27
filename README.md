@@ -1,4 +1,4 @@
-# ansible-plays-workspace
+# ansible-ubuntu-env
 
 Ansible plays for bootstrapping my personal workspace on Ubuntu (16.04 and 18.04 LTS).
 
