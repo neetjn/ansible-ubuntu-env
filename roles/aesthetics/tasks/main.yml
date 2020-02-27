@@ -33,7 +33,7 @@
   become: False
 
 - name: Install gruvbox shell theme
-  shell: bash -c "$(wget -qO- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/later-this-evening.sh)"
+  shell: bash -c "$(wget -qO- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/aci.sh)"
   become: False
 
 - name: Install betterlockscreen
