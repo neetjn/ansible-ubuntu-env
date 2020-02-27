@@ -46,6 +46,11 @@
     name: elinks
     state: present
 
+- name: Install compton
+  apt:
+    name: compton
+    state: present
+
 - name: Install i3
   apt:
     name: i3
