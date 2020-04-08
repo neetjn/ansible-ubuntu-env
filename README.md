@@ -22,6 +22,7 @@ This playbook has been broken up into four individual role groups:
 * Install obs (screencasting).
 * Install ffsend.
 * Install spotify.
+* Install Brave browser.
 
 #### Development
 
@@ -71,7 +72,6 @@ This playbook has been broken up into four individual role groups:
 * Install teamviewer.
 * Install Caprine (messenger).
 * Install Slack.
-* Install Microsoft Teams.
 * Install Discord.
 
 ---

@@ -15,9 +15,6 @@
 
 - name: Install Caprine
   shell: snap install caprine
-  
-- name: Install Teams
-  shell: snap install teams-for-linux
 
 - name: Install Discord
   shell: snap install discord

@@ -184,11 +184,15 @@
 
 - name: Install ffsend
   shell: snap install ffsend
-  
+
 - name: Install Spotify
   shell: snap install spotify
-  
+
 - name: Install Redshift
   apt:
     name: redshift
     state: present
+
+- name: Install Brave Browser
+  shell: snap install brave
+
