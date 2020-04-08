@@ -20,6 +20,7 @@
   with_items:
     - libdbus-1-dev
     - fonts-font-awesome
+    - fonts-powerline
 
 - name: Install i3status-rust
   shell: |
