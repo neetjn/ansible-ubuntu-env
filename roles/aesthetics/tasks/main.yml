@@ -32,9 +32,9 @@
     cp target/release/i3status-rs ~/.bin/i3status-rs
   become: False
 
-- name: Install gruvbox shell theme
-  shell: bash -c "$(wget -qO- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/aci.sh)"
-  become: False
+# - name: Install gruvbox shell theme
+#   shell: bash -c "$(wget -qO- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/aci.sh)"
+#   become: False
 
 - name: Install betterlockscreen
   shell: bash -c "$(wget -qO- https://gist.githubusercontent.com/neetjn/6dbde42fa929ea114ad37c401e47fc22/raw/241ef0da5e788cad8f9d824ebd47005f905500d1/betterlockscreen-auto.sh)"
