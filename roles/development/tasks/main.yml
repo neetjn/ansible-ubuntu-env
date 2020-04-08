@@ -186,6 +186,11 @@
   shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   become: False
 
+- name: Install Cargo
+  apt:
+    name: cargo
+    state: present
+
 - name: Add Dart Keys
   shell: |
     sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
