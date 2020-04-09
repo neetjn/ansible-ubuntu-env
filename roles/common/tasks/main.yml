@@ -140,10 +140,10 @@
 
 - name: Copy dotfiles
   shell: |
-    chown -R "{{host_username}}" /tmp/dotfiles/
     cp -r /tmp/dotfiles/* "{{home_directory}}"
     cp -r /tmp/dotfiles/.* "{{home_directory}}"
     rm -rf "{{home_directory}}/.git"
+    chown -R "{{host_username}}:{{host_username}} {{home_directory}}"
   ignore_errors: yes
 
 - name: Install ncurses-term
