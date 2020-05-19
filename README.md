@@ -35,7 +35,7 @@ This playbook has been broken up into four individual role groups:
 * Install pylint.
 * Install pep8 core.
 * Install httpie (cli http tool).
-* Install aws-cli.
+* Install saws.
 * Install docker.
 * Install docker-compose.
 * Install node.js 10 stable (using n tool).
@@ -53,6 +53,7 @@ This playbook has been broken up into four individual role groups:
 * Install Dart 2.
 * Install php7.
 * Install composer (w/ laravel).
+* Install mongodb-compass.
 * Install datagrip.
 * Install insomnia rest tool.
 * Install vscode.
