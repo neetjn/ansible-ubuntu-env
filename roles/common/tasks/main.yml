@@ -182,6 +182,9 @@
     name: obs-studio
     state: present
 
+- name: Install todolist
+  shell: snap install todolist
+
 - name: Install ffsend
   shell: snap install ffsend
 
