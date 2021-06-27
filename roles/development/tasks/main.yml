@@ -31,12 +31,12 @@
     validate_certs: no
     repo: ppa:deadsnakes/ppa
     state: present
-    
+
 - name: Install python (2.7)
   apt:
     name: python2.7
     state: present
-    
+
 - name: Install pip for python 2
   shell: curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2.7
 
@@ -264,7 +264,7 @@
     repo: ppa:jonathonf/vim
     state: present
     update_cache: yes
-    
+
 - name: Fix missing dependencies (hit on first run with Ubuntu 20.04 lts)
   shell: apt-get install -f -y
 
@@ -311,11 +311,3 @@
   apt:
     name: gradle
     state: present
-
-- name: Install .NET SDK + Runtime 3.1
-  shell: |
-    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-    dpkg -i packages-microsoft-prod.deb
-    rm -rf packages-microsoft-prod.deb
-    apt-get install -y dotnet-sdk-3.1 aspnetcore-runtime-3.1 dotnet-runtime-3.1
-

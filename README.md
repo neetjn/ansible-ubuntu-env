@@ -61,11 +61,9 @@ This playbook has been broken up into four individual role groups:
 * Install vim and gvim.
 * Install Java 8
 * Install Gradle (with groovy)
-* Install Dotnet SDK + Runtime (3.1)
 
 #### Aesthetics
 
-* Install Oranchelo icon theme.
 * Install numix gtk theme.
 * Install i3status-rust.
 
