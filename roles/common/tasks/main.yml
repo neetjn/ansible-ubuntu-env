@@ -103,12 +103,15 @@
     - automake
     - autogen
 
-# note: unnecessary for ubuntu 20+
-# - name: Install xcb-utils
-#  shell: curl -s https://gist.githubusercontent.com/neetjn/1452f0ca91886d935baaa405fb8dd15f/raw/513ccda3740c789edaf80f0c5875e2d4386cc7f9/install-xcb-util.sh | bash
-
+- name: Add PPA for i3-gaps
+  apt_repository:
+    repo: ppa:kgilmer/speed-ricer
+    update_cache: yes
+    
 - name: Install i3-gaps
-  shell: curl -s https://gist.githubusercontent.com/neetjn/e87184f0a3942ae8f8d122b91fae701a/raw/3c898086d873eb78c536634bc94dc3ca4476b2cb/install-i3-gaps.sh | bash
+  apt:
+    name: i3-gaps
+    state: present
 
 - name: Install nitogren
   apt:
