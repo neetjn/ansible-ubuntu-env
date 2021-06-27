@@ -1,6 +1,6 @@
 # ansible-ubuntu-env
 
-Ansible plays for bootstrapping my personal workspace on Ubuntu (16.04 and 18.04 LTS).
+Ansible plays for bootstrapping my personal workspace on Ubuntu (20.04 LTS).
 
 This playbook has been broken up into four individual role groups:
 
