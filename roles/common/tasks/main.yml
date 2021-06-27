@@ -1,3 +1,8 @@
+- name: Adding Universe repository
+  apt_repository:
+    repo: universe
+    update_cache: yes
+
 - name: Install build essentials for ubuntu
   apt:
     name: build-essential
