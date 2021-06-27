@@ -32,13 +32,13 @@
     repo: ppa:deadsnakes/ppa
     state: present
     
-- name: Install python 2 from universe
+- name: Install python (2.7)
   apt:
-    name: python2
+    name: python2.7
     state: present
     
 - name: Install pip for python 2
-  shell: curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2
+  shell: curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2.7
 
 - name: Install pip for python 3
   apt:
