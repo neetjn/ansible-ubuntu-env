@@ -107,7 +107,6 @@
 - name: Install docker compose
   pip:
     name: docker-compose
-    version: 1.9.0
     state: present
 
 - name: Install npm
