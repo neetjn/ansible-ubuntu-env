@@ -18,9 +18,8 @@
     cd ~/Development
     git clone https://github.com/greshake/i3status-rust
     cd i3status-rust
-    cargo build --release
-    mkdir -p ~/.bin
-    cp target/release/i3status-rs ~/.bin/i3status-rs
+    cargo install --path .
+    ./install.sh
   become: False
 
 # - name: Install gruvbox shell theme
