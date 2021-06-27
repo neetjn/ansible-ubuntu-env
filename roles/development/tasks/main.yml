@@ -31,11 +31,14 @@
     validate_certs: no
     repo: ppa:deadsnakes/ppa
     state: present
-
-- name: Install pip python package manager
+    
+- name: Install python 2 from universe
   apt:
-    name: python-pip
+    name: python2
     state: present
+    
+- name: Install pip for python 2
+  shell: curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2
 
 - name: Install pip for python 3
   apt:
@@ -43,11 +46,11 @@
     state: present
 
 - name: Upgrade pip and pip3
-  shell: pip install --upgrade pip && pip3 install --upgrade pip
+  shell: pip2 install --upgrade pip && pip3 install --upgrade pip
 
-- name: Install Python development libs
+- name: Install Python (2.7) development libs
   apt:
-    name: python-dev
+    name: python2.7-dev
     state: present
 
 - name: Install Python (3.6) development libs
