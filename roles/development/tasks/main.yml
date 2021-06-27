@@ -263,6 +263,10 @@
     validate_certs: no
     repo: ppa:jonathonf/vim
     state: present
+    update_cache: yes
+    
+- name: Fix missing dependencies (hit on first run with Ubuntu 20.04 lts)
+  shell: apt-get install -f -y
 
 - name: Install vim
   apt:
