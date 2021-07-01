@@ -16,22 +16,19 @@ This playbook has been broken up into four individual role groups:
 * Install tmux.
 * Install nitrogen.
 * Install jq.
-* Install Gnome Tweaks.
 * Install Gimp.
-* Install kdenlive (video editting).
-* Install obs (screencasting).
 * Install todolist.
 * Install ffsend.
-* Install spotify.
 * Install Brave browser.
 
 #### Development
 
 * Install cmake.
+* Install clang.
 * Install gcc7.
 * Install watchman.
 * Install pip2/pip3.
-* Install Python 3.6 & 3.7.
+* Install Python 2.7, 3.6, & 3.7.
 * Install python development tools.
 * Install pylint.
 * Install pep8 core.
@@ -64,16 +61,15 @@ This playbook has been broken up into four individual role groups:
 
 #### Aesthetics
 
-* Install numix gtk theme.
 * Install i3status-rust.
+* Install betterlockscreen.
 
 #### Social
 
-* Install teamviewer.
 * Install Caprine (messenger).
 * Install Slack.
 * Install Discord.
 
 ---
 
-Copyright (c) 2020 John Nolette Licensed under the MIT license.
+Copyright (c) 2021 John Nolette Licensed under the MIT license.

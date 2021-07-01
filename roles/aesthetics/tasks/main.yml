@@ -1,8 +1,3 @@
-- name: Install Numix GTK
-  apt:
-    name: numix-gtk-theme
-    state: present
-
 - name: Install prerequisites for i3status-rust
   apt:
     name: "{{item}}"

@@ -12,9 +12,15 @@
   become: False
   when: git_ssh_key_exists.stat.exists == False
 
+
 - name: Install CMake
   apt:
     name: cmake
+    state: present
+
+- name: Install Clang
+  apt:
+    name: clang
     state: present
 
 - name: Install gcc 7
@@ -96,7 +102,7 @@
 - name: Check Docker Installed
   shell: which docker
   register: docker_check
-  ignore_errors: True
+  ignore_errors: yes
 
 # will install the latest version of docker
 - name: Install Docker
@@ -234,7 +240,7 @@
 - name: Check mongodb compass Installed
   shell: which mongodb-compass
   register: compass_check
-  ignore_errors: True
+  ignore_errors: yes
 
 - name: Install mongodb compass
   shell: |
@@ -256,7 +262,7 @@
 - name: Install Code Extensions
   shell: sh "{{home_directory}}"/.tools/install-code-extensions.sh
   become: False
-  ignore_errors: True
+  ignore_errors: yes
 
 - name: Add vim8 ppa
   apt_repository:
@@ -281,10 +287,12 @@
 - name: Install vimplug for vim plugins
   shell: curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   become: False
+  ignore_errors: yes
 
 - name: Install vim plugins
   shell: vim +PlugInstall +qall
   become: False
+  ignore_errors: yes
 
 - name: Install editorconfig core
   apt:

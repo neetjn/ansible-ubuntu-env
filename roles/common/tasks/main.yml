@@ -51,16 +51,6 @@
     name: compton
     state: present
 
-- name: Install i3
-  apt:
-    name: i3
-    state: present
-
-- name: Install i3blocks
-  apt:
-    name: i3blocks
-    state: present
-
 - name: Install prerequisites for i3 blocks and i3gaps
   apt:
     name: "{{item}}"
@@ -103,11 +93,21 @@
     - automake
     - autogen
 
+- name: Install i3
+  apt:
+    name: i3
+    state: present
+
+- name: Install i3blocks
+  apt:
+    name: i3blocks
+    state: present
+
 - name: Add PPA for i3-gaps
   apt_repository:
     repo: ppa:kgilmer/speed-ricer
     update_cache: yes
-    
+
 - name: Install i3-gaps
   apt:
     name: i3-gaps
@@ -173,15 +173,10 @@
   apt:
     name: ncurses-term
     state: present
-    
+
 - name: Install jq
   apt:
     name: jq
-    state: present
-
-- name: Install Gnome Tweaks
-  apt:
-    name: gnome-tweaks
     state: present
 
 - name: Install Gimp
@@ -189,30 +184,11 @@
     name: gimp
     state: present
 
-- name: Install kdenlive
-  apt:
-    name: kdenlive
-    state: present
-
-- name: Add obs studio repository
-  apt_repository:
-    validate_certs: no
-    repo: ppa:obsproject/obs-studio
-    state: present
-
-- name: Install obs studio
-  apt:
-    name: obs-studio
-    state: present
-
 - name: Install todolist
   shell: snap install todolist
 
 - name: Install ffsend
   shell: snap install ffsend
-
-- name: Install Spotify
-  shell: snap install spotify
 
 - name: Install Redshift
   apt:
