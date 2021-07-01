@@ -146,7 +146,11 @@
 
 - name: Install oh-my-zsh
   shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  become: False
+  become: no
+
+- name: Set zsh as default shell
+  shell: chsh -s $(which zsh)
+  become: no
 
 - name: Re-enable chsh authentication
   lineinfile:
@@ -159,7 +163,7 @@
     repo: https://github.com/neetjn/dotfiles.git
     dest: /tmp/dotfiles
     version: master
-  become: False
+  become: no
 
 - name: Copy dotfiles
   shell: |
