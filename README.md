@@ -36,6 +36,7 @@ This playbook has been broken up into four individual role groups:
 * Install saws.
 * Install docker.
 * Install docker-compose.
+* Install deno.
 * Install node.js 10 stable (using n tool).
 * Install coffeescript.
 * Install webpack.
