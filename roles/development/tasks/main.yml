@@ -212,6 +212,15 @@
     state: present
     update_cache: yes
 
+- name: Install flutter pre-requisites
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - ninja-build
+    - pkg-config
+    - libgtk-3-dev
+
 - name: Install flutter
   shell: snap install flutter --classic
 
