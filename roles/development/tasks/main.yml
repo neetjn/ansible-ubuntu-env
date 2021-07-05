@@ -212,6 +212,9 @@
     state: present
     update_cache: yes
 
+- name: Install flutter
+  shell: snap install flutter --classic
+
 - name: Add php Keys
   shell: LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 

@@ -50,6 +50,7 @@ This playbook has been broken up into four individual role groups:
 * Install Go lang (stable).
 * Install Rust lang (edge).
 * Install Dart 2.
+* Install flutter.
 * Install php7.
 * Install composer (w/ laravel).
 * Install mongodb-compass.
