@@ -4,6 +4,7 @@
     state: present
   with_items:
     - libdbus-1-dev
+    - libsensors-dev
     - fonts-font-awesome
     - fonts-powerline
 
