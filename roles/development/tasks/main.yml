@@ -113,6 +113,13 @@
   shell: curl https://get.docker.com/ | sh
   when: docker_check.rc == 1
 
+- name: Setup Docker
+  shell: |
+    usermod -aG docker "{{host_username}}"
+    systemctl enable docker
+    systemctl start docker
+  when: docker_check.rc == 1
+
 # https://github.com/ansible/ansible/issues/20492#issuecomment-274081101
 - name: Install docker compose
   pip:

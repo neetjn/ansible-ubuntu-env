@@ -171,6 +171,7 @@
     cp -r /tmp/dotfiles/.* "{{home_directory}}"
     rm -rf "{{home_directory}}/.git"
     chown -R "{{host_username}}:{{host_username}} {{home_directory}}"
+    chown -R "{{host_username}}:{{host_username}} {{home_directory}}/.*"
   ignore_errors: yes
 
 - name: Install ncurses-term
