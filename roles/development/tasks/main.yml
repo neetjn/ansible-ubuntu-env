@@ -77,26 +77,31 @@
   pip:
     name: pylint
     state: present
+    executable: pip3
 
 - name: Install pep8
   pip:
     name: pep8
     state: present
+    executable: pip3
 
 - name: Install flake8
   pip:
     name: flake8
     state: present
+    executable: pip3
 
 - name: Install httpie cli
   pip:
     name: httpie
     state: present
+    executable: pip3
 
 - name: Install SAWS
   pip:
     name: saws
     state: present
+    executable: pip3
 
 - name: Check Docker Installed
   shell: which docker
@@ -113,6 +118,7 @@
   pip:
     name: docker-compose
     state: present
+    executable: pip3
 
 - name: Install deno
   shell: curl -fsSL https://deno.land/x/install/install.sh | sh
@@ -178,6 +184,7 @@
   pip:
     name: mycli
     state: present
+    executable: pip3
 
 - name: Install postgres development libs
   apt:
@@ -188,6 +195,7 @@
   pip:
     name: pgcli
     state: present
+    executable: pip3
 
 - name: Install Go
   shell: snap install go --classic
