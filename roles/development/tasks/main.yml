@@ -349,3 +349,6 @@
   apt:
     name: gradle
     state: present
+    
+- name: Install Zig
+  shell: snap install zig --beta --classic
